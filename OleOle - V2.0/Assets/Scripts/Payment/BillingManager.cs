@@ -6,7 +6,7 @@ public class BillingManager {
 	static BillingManager(){
 		
 		#if UNITY_ANDROID
-		string _key = 	"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjtXN/EOhIM+uNC4ussb9y+GXx3pLaHbggw/Q81OZ5cwc9o+yeQKn4IFQsb7LOca6ioN/IbIMtipwwCibFE4Xoe1jwgbj3A5tNj+m+agALH+LwdQFvGO3ISAx+pYNgDlJfYuZKfj3FwAW1CK++SyTx7Ce2Su2BfT9d9N/lghexhzmIAPKkldJrvlDXOEf8X+BrK+kowPQ+VF4zivEWB1el2JiB34KVa/9/HjCbTQRZzZH9c3auNvycfsNh7i2se/TtoFv+4fp5OKi39LcbiZOd99+G1SQsRdtC+wny7+OIvqG59vgFajaNzepF+zQ5Jzj0rP8CVqyaCbWKe0jxIzvwQIDAQAB";
+		string _key = 	"";
 		GoogleIAB.init(_key);
 		#endif
 		
