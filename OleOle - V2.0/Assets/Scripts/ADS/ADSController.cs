@@ -14,7 +14,7 @@ public class ADSController : MonoBehaviour {
 	void Awake () {
 
 #if UNITY_ANDROID
-		AdMobAndroid.init("1065749736805");
+		AdMobAndroid.init("");
 #endif
 
 		StartCoroutine(ADSController.createBanner());
@@ -32,7 +32,7 @@ public class ADSController : MonoBehaviour {
 		yield return null;
 
 #if UNITY_ANDROID
-		AdMobAndroid.createBanner("ca-app-pub-4879760822232283/4183458455", AdMobAndroidAd.phone320x50, AdMobAdPlacement.BottomCenter);
+		AdMobAndroid.createBanner("", AdMobAndroidAd.phone320x50, AdMobAdPlacement.BottomCenter);
 #elif UNITY_IPHONE
 		iAd.createBanner(ADBannerView.Type.Banner, ADBannerView.Layout.BottomCenter);
 #endif
@@ -93,7 +93,7 @@ public class ADSController : MonoBehaviour {
 		yield return null;
 
 #if UNITY_ANDROID
-		AdMobAndroid.requestInterstital("ca-app-pub-4879760822232283/4183458455");
+		AdMobAndroid.requestInterstital("");
 #elif UNITY_IPHONE
 		iAd.createFullBanner();
 #endif
